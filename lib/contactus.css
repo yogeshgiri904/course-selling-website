@@ -1,0 +1,124 @@
+*
+{
+    outline: none;
+}
+body
+{
+    font-family: "Raleway";
+    background: linear-gradient(to bottom right, magenta,  rebeccapurple );
+}
+.contactbox
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 400px;
+}
+.logo img
+{
+    width: 200px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h3
+{
+    font-size: 32px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+::placeholder
+{
+    color: black;
+}
+
+.contact input
+{
+   
+    border: 1.5px solid black;
+    height: 30px;
+    background: transparent;
+    font-size: 15px ;
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact select
+{   
+    border: 1.5px solid black;
+    height: 30px;
+    background: transparent;
+    font-size: 15px ;
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact textarea
+{
+    border: 1.5px solid black;
+    background: transparent;
+    font-size: 15px ;
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact input[type="submit"]
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    border-radius: 2px;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    height: 35px;
+    font-size: 15px ;
+    margin-top: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+    font-family: "Raleway";
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact input[type="submit"]:hover
+{
+    background-color: greenyellow;
+    color: black;
+
+}
+
+
+@media(max-width:720px)
+{
+    .contactbox
+    {
+        width: 80%;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
+    .contact input[type="submit"]
+    {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    }
+
+}

@@ -1,0 +1,58 @@
+body
+{
+    background-image: url(../img/6.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: rali;
+}
+@font-face 
+{
+    font-family:rali;
+    src: url(../font/Raleway-Light.ttf);
+}
+
+.box1
+{
+    background-color: transparent;
+    width: 1200px;
+    height: 600px;
+    top: 10%;
+    right: 10%;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.466);
+
+}
+
+.box2
+{
+    width: 1000px;
+    height: 520px;
+    box-sizing: border-box;
+    padding-left: 15%;
+    position: absolute;
+    text-align: center;  
+}
+
+.box2 h1
+{
+    font-size: 50px ;
+    color: white;
+
+}
+
+.box2 p
+{
+    margin-top: 5%;
+    font-size: 18px ;
+    color: white;
+
+}
+
+.box2 a
+{
+    text-decoration: underline;
+    color: aqua;
+    font-weight: bold;
+}

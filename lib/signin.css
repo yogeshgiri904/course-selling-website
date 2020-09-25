@@ -1,0 +1,190 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    outline: none; 
+}
+body
+{
+    font-family: 'Raleway';
+    background: crimson;
+}
+p
+{
+    font-size: 15px;
+    color: red;
+    margin-left: 15px;
+}
+.formbox1
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    width: 70%;
+    border-radius: 4px;
+    overflow: hidden;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.formbox2
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow:hidden;
+    width: 70%;
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+    background: white;
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/3326/3326507.svg");
+    background-repeat: no-repeat;
+    background-position:center center;
+
+}
+.formbox2 h2
+{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.formbox2 span
+{
+    display: none;
+    position: relative;
+    background:rgba(0, 0, 0, 0.100);
+    border: .5px solid black;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    width: 74%;
+    height: auto;
+    margin-left: 10px;
+}
+.formbox2 button
+{
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    cursor: pointer; 
+}
+.form
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 400px;
+    background-color: transparent;
+    padding-left: 10px;
+    
+}
+.form
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]
+{
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid black;
+    background-color: transparent;
+    width: 70%;
+    height: 15px;
+    color: black;
+    font-size: 15px;
+    margin: 8px 15px;
+    padding: 10px;
+    font-family: 'Raleway';
+}
+.form input[type="checkbox"]
+{
+    margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.form input[type="submit"]
+{
+    border: 2px solid #900C3F;
+    border-radius: 20px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 15px ;
+    padding: 8px 10px;
+    width: 150px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    background-color: transparent;
+    color: #900C3F;
+    transition: 0.3s;
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.200);
+}
+.form input[type="submit"]:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: #900C3F;
+}
+@media (max-width: 720px)
+{
+    .formbox1
+{
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 85%;
+}
+    .formbox2
+    {
+        padding: 0px; 
+        width: 100%;
+        height: 100%;
+        background-image: url("https://www.flaticon.com/svg/static/icons/svg/3319/3319680.svg");
+        background-size: contain;
+        background-position: bottom left;
+    }
+    .form
+    {
+        width: 280px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        font-size: 12px;
+    }
+    .form input[type="submit"]
+    {
+        width: 100px;
+    }
+    .form
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"]
+    {
+        border: 1.5px solid black;
+        border-radius: 2px;
+        height: 10px;
+        font-size: 12px;
+    }
+    p
+    {
+        font-size:10px;
+    }
+   
+
+    
+
+}
