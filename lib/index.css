@@ -217,7 +217,7 @@
     display: inline-block;
     text-align: left;
 }
-.list ul li
+.active, .list ul li
 {
     border-bottom: 1px solid grey;
     padding-bottom: 5px;
