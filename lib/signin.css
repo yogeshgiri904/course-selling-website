@@ -81,7 +81,7 @@ body
 {
     position: absolute;
     left: 50%;
-    top: 58%;
+    top: 56%;
     transform: translate(-50%,-50%);
     width: 350px;
     height: 400px; 
@@ -251,7 +251,7 @@ input[type="password"]
     }
     .form
     {
-        top: 62%;
+        top: 60%;
         width: 280px;
     }
     .form
