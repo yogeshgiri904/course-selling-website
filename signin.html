@@ -10,40 +10,36 @@
 
 <body> 
   
-<div class="formbox1" id="form">
+<div class="formbox1">
     <div class="formbox2">
-        <h2>Sign Up</h2>
-        <div class="form">
-            <input type="text" id="user" placeholder="Enter Username" >
-                <button onmouseover="document.getElementById('at1').style.display='block'" onmouseout="document.getElementById('at1').style.display='none'">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                </button>
-                    <span id="at1"> USER - no special charactor, having more than 3 charactors.</br>For Availability atleast use 2 number digits with username.</span>
-                        <p class="p0" id="p0"></p> 
-
-            <input type="email" id="mail" placeholder="Enter Mail" onkeyup="validateMail()" >
-                <button onmouseover="document.getElementById('at2').style.display='block'" onmouseout="document.getElementById('at2').style.display='none'">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                </button>
-                    <span id="at2"> EMAIL - ie "abc123@gmail.com" or "abc123@gmail.co.in"</span>
-                        <p class="p3" id="p3"></p>
-
-            <input type="tel" id="tel" maxlength="10" placeholder="Mobile No." ></br>
-
-            <input type="password" id="pass" placeholder="Enter Password" onkeyup="strPass()">
-                <button onmouseover="document.getElementById('at3').style.display='block'" onmouseout="document.getElementById('at3').style.display='none'">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                </button>
-                    <span id="at3">PASSWORD (Strong) - must have atleast one special charactor, one capital letter, one number and total 8 digits or more.</br></span>
-                        <p class="p1" id="p1"></p>
-
-            <input type="password" id="cpass" placeholder="Confirm Password" ></br>
-                <p class="p2" id="p2"></p>
-
+        <div class="formbox3">
+            <img src="img/logo.png" class="logo">
+            <h2>Sign Up Now</h2>
+            <p>Hey! Are you new here? Create an account now for free.</p>
+            <p>Already have an account? <a href="signin.html">Sign in <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+        </div>
+        <div class="form" id="form">
+            <form action="action.php">
+            <input type="text" id="user" placeholder="Enter Username" onkeyup="validateUser()"><p class="p0" id="p0"></p>
+            <input type="email" id="mail" placeholder="Enter Mail" onkeyup="validateMail()" ><p class="p3" id="p3"></p>
+            <input type="tel" id="tel" maxlength="10" placeholder="Mobile No." >
+            <input type="password" id="pass" placeholder="Enter Password" onkeyup="strPass()"><p class="p1" id="p1"></p>
+            <input type="password" id="cpass" placeholder="Confirm Password" ><p class="p2" id="p2"></p>
             <input type="checkbox" value="check" required>
-                <label for="check">I agree with Terms & Conditions.</label>
-
-            <input type="submit" value="Submit" onclick="return validateUser()" ></br>
+            <label for="check">I agree with Terms & Conditions.</label></br>
+            <input type="checkbox" value="check" required>
+            <label for="check">I want to receive updates on my email.</label>
+            <input type="submit" value="Submit" >
+            </form>
+        </div>
+        <div class="socialbox">
+            <p>Sign up with</p>
+            <div class="social">
+                <a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div>
 </div>

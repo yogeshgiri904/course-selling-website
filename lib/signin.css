@@ -9,19 +9,13 @@ body
     font-family: 'Raleway';
     background: crimson;
 }
-p
-{
-    font-size: 15px;
-    color: red;
-    margin-left: 15px;
-}
 .formbox1
 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    height: 600px;
+    height: 650px;
     width: 70%;
     border-radius: 4px;
     overflow: hidden;
@@ -30,60 +24,73 @@ p
     background-size: cover;
     background-position: center center;
     color: black;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .formbox2
 {
     position: absolute;
     left: 0px;
     top: 0px;
-    overflow:hidden;
+    overflow: hidden;
     width: 70%;
     height: 100%;
     padding: 20px 20px 20px 20px;
     background: white;
-    background-image: url("https://www.flaticon.com/svg/static/icons/svg/3326/3326507.svg");
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/3319/3319680.svg");
     background-repeat: no-repeat;
-    background-position:center center;
-
+    background-size: 500px 500px;
+    background-position: left bottom;
 }
-.formbox2 h2
+.formbox3
 {
-    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 180px;
+}
+.formbox3 .logo
+{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: -2%;
+    width: 160px;
+}
+.formbox3 h2
+{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 25px;
     text-align: center;
     text-transform: uppercase;
 }
-.formbox2 span
+.formbox3 p
 {
-    display: none;
-    position: relative;
-    background:rgba(0, 0, 0, 0.100);
-    border: .5px solid black;
-    border-radius: 3px;
-    font-size: 12px;
-    padding: 5px 5px 5px 5px;
-    width: 74%;
-    height: auto;
-    margin-left: 10px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    padding-bottom: 5px;
 }
-.formbox2 button
+.formbox3 a
 {
-    display: inline-flex;
-    background: transparent;
-    border: none;
-    cursor: pointer; 
+    color: rgb(192, 17, 17);
+    text-decoration: none;
+    font-weight: bold;
 }
 .form
 {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 58%;
     transform: translate(-50%,-50%);
     width: 350px;
-    height: 400px;
-    background-color: transparent;
-    padding-left: 10px;
-    
+    height: 400px; 
+}
+.form p
+{
+    font-size: 12px;
+    color: red;
+    margin-left: 15px;
 }
 .form
 input[type="text"],
@@ -91,33 +98,36 @@ input[type="email"],
 input[type="tel"],
 input[type="password"]
 {
-    border: none;
-    outline: none;
-    border-bottom: 1.5px solid black;
+    border: 1.5px solid black;
+    border-radius: 2px;
     background-color: transparent;
-    width: 70%;
+    width: 85%;
     height: 15px;
     color: black;
     font-size: 15px;
-    margin: 8px 15px;
+    margin: 5px 15px;
     padding: 10px;
     font-family: 'Raleway';
 }
+.form label
+{
+    font-size: 13px;
+}
 .form input[type="checkbox"]
 {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 15px;
     cursor: pointer;
-    padding: 10px;
-
+    width: 12px;
 }
 .form input[type="submit"]
 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
     border: 2px solid #900C3F;
     border-radius: 20px;
-    float: left;
-    margin-top: 25px;
-    margin-left: 15px;
+    margin-top: 40px;
     font-size: 15px ;
     padding: 8px 10px;
     width: 150px;
@@ -134,39 +144,115 @@ input[type="password"]
     color: white;
     background-color: #900C3F;
 }
+.socialbox
+{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.socialbox p
+{
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.social
+{
+    display: inline-flex;
+    text-align: center;
+}
+.social a
+{  
+    margin-left: 10px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.social a:nth-child(1)
+{
+    margin-left: 0px;
+    background-color:brown;
+}
+.social a:nth-child(1):hover
+{
+    background-color: white;
+    color:brown;
+}
+.social a:nth-child(2)
+{
+    background-color:#3B5998;
+}
+.social a:nth-child(2):hover
+{
+    background-color: white;
+    color:#3B5998;
+}
+.social a:nth-child(3)
+{
+    background-color: #00ACEE;
+}
+.social a:nth-child(3):hover
+{
+    background-color: white;
+    color:#00ACEE;
+}
+.social a:nth-child(4)
+{
+    background-color:#0E76A8;
+}
+.social a:nth-child(4):hover
+{
+    background-color: white;
+    color:#0E76A8;
+}
 @media (max-width: 720px)
 {
     .formbox1
-{
-    background: white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    height: 500px;
-    width: 85%;
-}
+    {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: none;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+    }
     .formbox2
     {
-        padding: 0px; 
-        width: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: none;
         height: 100%;
-        background-image: url("https://www.flaticon.com/svg/static/icons/svg/3319/3319680.svg");
-        background-size: contain;
-        background-position: bottom left;
+        width: 100%;
+        background-size: 300px 300px;
+        padding: 0;
+    }
+
+    .formbox2 h2
+    {
+        margin-top: 120px;
+        font-size: 20px;
+    }
+    .formbox2 p
+    {
+        font-size: 13px;
     }
     .form
     {
+        top: 62%;
         width: 280px;
-        height: 300px;
-        position: absolute;
-        left: 50%;
-        top: 45%;
-        font-size: 12px;
-    }
-    .form input[type="submit"]
-    {
-        width: 100px;
     }
     .form
     input[type="text"],
@@ -179,12 +265,31 @@ input[type="password"]
         height: 10px;
         font-size: 12px;
     }
-    p
+    .form label
     {
-        font-size:10px;
+        font-size: 10px;
+    }
+    .form p
+    {
+        font-size: 10px;
+    }
+    .socialbox
+    {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .socialbox p
+    {
+        font-size: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .social
+    {
+        display: inline-flex;
+        text-align: center;
     }
    
-
-    
-
 }
