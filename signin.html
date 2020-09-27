@@ -16,18 +16,20 @@
             <a href="index.html"><img src="img/logo.png" class="logo"></a>
             <h2>Sign Up Now</h2>
             <p>Hey! Are you new here? Create an account now for free.</p>
-            <p>Already have an account? <a href="signin.html">Sign in <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+            <p>Already have an account? <a href="signin.html">Sign in <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
         </div>
-        <div class="form" id="form">
-            <form action="action.php">
+        <div class="form">
+            <fworm id="form">
             <input type="text" id="user" placeholder="Enter Username" onkeyup="validateUser()"><p class="p0" id="p0"></p>
             <input type="email" id="mail" placeholder="Enter Mail" onkeyup="validateMail()" ><p class="p3" id="p3"></p>
-            <input type="tel" id="tel" maxlength="10" placeholder="Mobile No." >
-            <input type="password" id="pass" placeholder="Enter Password" onkeyup="strPass()"><p class="p1" id="p1"></p>
+            <input type="tel" id="tel" maxlength="10" placeholder="Mobile No.">
+            <input type="password" id="pass" placeholder="Enter Password" onkeyup="strPass()">
+            <button id="seen" class="eye" onclick="seen()"><i class="fa fa-eye" aria-hidden="true"></i></button>
+            <button id="hide" class="eye" onclick="hide()"><i class="fa fa-eye-slash" aria-hidden="true"></i></button><p class="p1" id="p1"></p>
             <input type="password" id="cpass" placeholder="Confirm Password" ><p class="p2" id="p2"></p>
-            <input type="checkbox" value="check" required>
+            <input type="checkbox" value="check">
             <label for="check">I agree with Terms & Conditions.</label></br>
-            <input type="checkbox" value="check" required>
+            <input type="checkbox" value="check">
             <label for="check">I want to receive updates on my email.</label>
             <input type="submit" value="Submit" >
             </form>

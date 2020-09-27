@@ -1,4 +1,4 @@
-*
+*, *::before, *::after
 {
     padding: 0px;
     margin: 0px;
@@ -92,6 +92,7 @@
 .list ul li:hover .sub-menu-1 ul li
 {
     width: 200px;
+    padding: 10px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.500);
 }
 .list ul li:hover .sub-menu-1 ul li:last-child
@@ -109,7 +110,6 @@
 }
 .hover1:hover .sub-menu-2
 {
-   
     display: block;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.700);
@@ -361,17 +361,17 @@
     .main
     {
         position: absolute;
-        top: 30%;
+        top: 40%;
     }
 .main h1
 {
-    font-size: 40px;
+    font-size: 28px;
     padding-left: 20px;
     padding-right: 20px;
 }
 .main p
 {
-    font-size: 20px;
+    font-size: 18px;
     color:white; 
 }
 .main a
@@ -752,7 +752,7 @@
     transform: translate(-50%,-50%);
     display: inline-flex;
     justify-content: space-between;
-    width: 75%;
+    width: 70%;
     height: 70%;
     margin-top: 70px;
     background-color: transparent;
@@ -830,7 +830,7 @@
     background: linear-gradient(to left top, #7579ff, #b224ef);
     display: block;
     margin-left: 80px;
-    margin-top: 12px;
+    margin-top: 40px;
     width: 150px;
     height: 40px;
     color: white ;
@@ -885,6 +885,28 @@
         background: transparent;
         overflow: hidden;
     }
+    .pbox h3
+    {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .pbox ul
+    {
+        margin-top: 10px ;
+        margin-left: 60px;
+        text-align: left;
+        font-size: 15px;
+    }
+    .pbox p
+    {
+        margin-top: 30px;
+    }
+    .pbox a
+    {
+        margin-top: 30px;
+    }
+       
 
 }
 
