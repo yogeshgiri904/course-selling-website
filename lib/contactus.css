@@ -26,6 +26,8 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.500);
     width: 80%;
     height: 80%;
+    background-color: teal;
+
 }
 .map
 {
@@ -34,6 +36,10 @@
     bottom: 0;
     left: 0;
     right: 50%;
+    background-color: teal;
+    margin: 3% 0% 3% 3%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.500);
+
 }
 .contactbox
 {
@@ -44,7 +50,6 @@
     right: 0;
     display: inline-block;
     text-align: center;
-    background-color: teal;
 }
 .logo
 {
@@ -130,17 +135,13 @@ input[type=submit]:hover
 }
 .social a
 {  
+    display: block;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 100px;
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: center;
     font-size: 20px;
+    line-height: 40px;
+    border-radius: 100px;
     color: white;
     transition: 0.5s;
 }
@@ -215,6 +216,7 @@ input[type=submit]:hover
         bottom: 80%;
         left: 0;
         right: 0;
+        margin: 4% 4% 0% 4%;
     }
     .contactbox
     {
@@ -224,6 +226,7 @@ input[type=submit]:hover
         left: 0;
         right: 0;
         display: inline-block;
+        margin-top: 10px;
     }
     .logo
     {
@@ -233,6 +236,10 @@ input[type=submit]:hover
     {
         height: 36px;
         width: 120px;
+    }
+    .btn
+    {
+        margin-top: 8px;
     }
 
 }
