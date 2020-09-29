@@ -75,10 +75,8 @@
                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="contactbox">
-                <img src="img/logo.png" class="logo">
                 <h1>Contact Us</h1>
                 <p>Have Some Questions?</p>
-                <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
                 <div class="contact">
                     <form action="lib/contactus.php" method="post" id="contact-form">
                     <input type="text" id="fn" placeholder="First Name"></br>
@@ -332,7 +330,7 @@
                     <input type="submit" value="Send"></br>
                     </form>
                 </div>
-                <div class="btn">
+                <div class="sobtn">
                     <p>Social Contacts Info</p>
                     <div class="social">
                         <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -345,46 +343,5 @@
             </div>
         </div>
     </div>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-    <script>
-        const constraints = {
-            name: {
-                presence: { allowEmpty: false }
-            },
-            email: {
-                presence: { allowEmpty: false },
-                email: true
-            },
-            message: {
-                presence: { allowEmpty: false }
-            }
-        };
-  
-        const form = document.getElementById('contact-form');
-  
-        form.addEventListener('submit', function (event) {
-            const formValues = {
-                name: form.elements.name.value,
-                email: form.elements.email.value,
-                message: form.elements.message.value
-            };
-  
-            const errors = validate(formValues, constraints);
-  
-            if (errors) {
-                event.preventDefault();
-                const errorMessage = Object
-                    .values(errors)
-                    .map(function (fieldValues) {
-                        return fieldValues.join(', ')
-                    })
-                    .join("\n");
-  
-                alert(errorMessage);
-            }
-        }, false);
-    </script>
-
 </body>
 </html>
