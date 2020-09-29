@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 <head>
   <title>Contact Us | Shri Ram Org</title>
   <link rel="stylesheet" href="lib/contactus.css">
@@ -19,11 +18,11 @@
                 <img src="img/logo.png" class="logo">
                 <h1>Contact Us</h1>
                 <p>Have Some Questions?</p>
+                <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
                 <div class="contact">
-                    <form> 
-                    <input type="text" placeholder="First Name"></br>
-                    <input type="text" placeholder="Last Name"></br>
-                    <input  type="Email"  placeholder="Your Email"></br>
+                    <form action="lib/contactus.php" method="post" id="contact-form">
+                    <input type="text" id="name" placeholder="Your Name"></br>
+                    <input  type="email" id="email"  placeholder="Your Email"></br>
                     <label for="Country"></label>
                     <select id="country" name="country" class="form-control">
                         <option value="placeholder">Choose Your Country</option>
@@ -268,7 +267,7 @@
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select></br>
-                    <textarea id="Message" placeholder="Type Your Message..." style="height:100px"></textarea></br>
+                    <textarea id="message" placeholder="Type Your Message..." style="height:100px"></textarea></br>
                     <input type="submit" value="Send"></br>
                     </form>
                 </div>
@@ -285,6 +284,46 @@
             </div>
         </div>
     </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+        const constraints = {
+            name: {
+                presence: { allowEmpty: false }
+            },
+            email: {
+                presence: { allowEmpty: false },
+                email: true
+            },
+            message: {
+                presence: { allowEmpty: false }
+            }
+        };
+  
+        const form = document.getElementById('contact-form');
+  
+        form.addEventListener('submit', function (event) {
+            const formValues = {
+                name: form.elements.name.value,
+                email: form.elements.email.value,
+                message: form.elements.message.value
+            };
+  
+            const errors = validate(formValues, constraints);
+  
+            if (errors) {
+                event.preventDefault();
+                const errorMessage = Object
+                    .values(errors)
+                    .map(function (fieldValues) {
+                        return fieldValues.join(', ')
+                    })
+                    .join("\n");
+  
+                alert(errorMessage);
+            }
+        }, false);
+    </script>
 
 </body>
 </html>
