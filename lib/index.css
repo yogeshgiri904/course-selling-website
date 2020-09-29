@@ -205,7 +205,7 @@ body
     z-index: 2;
     width: 100vw;
     height: 0px;
-    background-color:rgba(0, 0, 0, 0.900);
+    background-color:black;
     position: fixed;
     overflow: hidden;
     left: 0;
