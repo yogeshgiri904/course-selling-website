@@ -46,7 +46,6 @@
 {
     text-decoration: none;
     color:white;
-    font-weight: 600;
 }
 .active, .list ul li:hover 
 {
@@ -103,19 +102,19 @@
 .signin
 {
     display: block;
-    color: white;
     text-align: center;
     font-size: 18px;
-    height: 30px;
+    height: 40px;
     width: 100px;
+    line-height: 36px;
     margin-top: 20px;
-    padding-top: 8px;
     cursor: pointer;
     border-radius: 50px;
     transition: 0.3s;
     text-decoration: none;
     border: 2px solid #ff0562;
     background-color: #ff0562;
+    color: white;
     transition: all ease 0.5;
     font-weight: 800;
     text-transform: uppercase;
@@ -152,10 +151,10 @@
 }
 .signin
 {
-    padding-top: 8px;
-    margin-top: 12px;
-    font-size: 13px;
-    height: 25px;
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 30px;
+    height: 32px;
     width: 80px;
 }
 .list
