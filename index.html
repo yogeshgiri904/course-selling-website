@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-        <div class="header">
+        <div class="header" id="header">
             <button onclick="openf()" id="openbtn" class="btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
             <button onclick="closef()" id="closebtn" class="btn"><i class="fa fa-times" aria-hidden="true"></i></button>
             <a href="aboutus.html"><img src="img/logo.png" alt="Shri Ram Org." class="logo"></a>
@@ -65,21 +65,23 @@
 </nav>
 </div>
 <div class="background">
-    <div class="main">
-        <form class="searchbox">
-            <input type="text" placeholder="What do you want to learn today?">
-            <a href="#" class="sicon"><i class="fa fa-search" aria-hidden="true"></i></a>
-        </form>
-        <h1>Welcome To Shri Ram Organiation</h1>
-        <p>
-            We will provide wings to your career.
-        </p>
-        <a href="contactus.html" class="cbtn">Contact Us</a>
-        <a href="signin.html" class="sbtn">Sign Up</a>
+    <div class="overlay">
+        <div class="main">
+            <form class="searchbox">
+                <input type="text" placeholder="What do you want to learn today?">
+                <a href="#" class="sicon"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </form>
+            <h1>Welcome To Shri Ram Organiation</h1>
+            <p>We will provide wings to your career.</p>
+            <a href="contactus.html" class="cbtn">Contact Us</a>
+            <a href="signin.html" class="sbtn">Sign Up</a>
+            <a href="#" class="topup"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
     </div>
-    <a href="#" class="topup"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </div>
 
+
+<div class="skew">
     <div class="coursebox">
         <div class="eflex1">
             <img src="img/no1.png" class="no1">
@@ -156,7 +158,7 @@
         </div>
         <a href="signin.html" class="explore">View More<i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </div>
-
+</div>
 
     <div class="expertbox">
         <div class="eflex1">
@@ -327,17 +329,18 @@
 <script>
     function openf()
     {
-        document.getElementById("list").style.width='100vw';
+        document.getElementById("list").style.height='60vh';
+        document.getElementById("header").style.backgroundColor='rgba(0, 0, 0, 0.900)';
         document.getElementById("closebtn").style.display='inline';
         document.getElementById("openbtn").style.display='none';     
 
     }
     function closef()
     {
-        document.getElementById("list").style.width='0px';
+        document.getElementById("list").style.height='0px';
+        document.getElementById("header").style.backgroundColor='rgba(0, 0, 0, 0.500)';
         document.getElementById("openbtn").style.display='inline'; 
         document.getElementById("closebtn").style.display='none';
-    
     }
 
 </script>

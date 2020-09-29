@@ -11,6 +11,10 @@
 }
 
 /* Menu Starts */
+body
+{
+    overflow-x: hidden;
+}
 .fa-check-circle-o
 {
     color: #25D366;
@@ -18,12 +22,23 @@
 .background
 {
     position: absolute;
-    background-image: url("https://images.pexels.com/photos/3774054/pexels-photo-3774054.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+.overlay
+{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
 }
 .header
 {
@@ -33,7 +48,7 @@
     justify-content: space-around;
     top: 0%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.900);
+    background-color: rgba(0, 0, 0, 0.500);
     height: 80px;
     width: 100%;
 }
@@ -70,7 +85,7 @@
 
 .active, .list ul li:hover 
 {
-    background-color: rgba(128, 128, 128, 0.500);;
+    background-color: rgba(128, 128, 128, 0.600);;
     border-radius: 3px;
 }
 .sub-menu-1
@@ -82,9 +97,9 @@
 {
     display: block;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.700);
-    margin-top: 18px;
-    margin-left: -40px;
+    background-color: rgba(0, 0, 0, 0.500);
+    margin-top: 8px;
+    margin-left: -55px;
     border-radius: 5px;
 }
 .list ul li:hover .sub-menu-1 ul
@@ -96,7 +111,7 @@
 {
     width: 200px;
     padding: 10px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.500);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.800);
 }
 .list ul li:hover .sub-menu-1 ul li:last-child
 {
@@ -115,9 +130,9 @@
 {
     display: block;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.700);
-    margin-top: -60px;
-    margin-left: 210px;
+    background-color: rgba(0, 0, 0, 0.500);
+    margin-top: -48px;
+    margin-left: 192px;
     border-radius: 5px;
 }
 .signin
@@ -145,26 +160,6 @@
     background-color: transparent;
     color: #ff0562;
 }
-.topup
-{
-    z-index: 10;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    background-color: #900C3F ;
-    box-shadow: 0px 2px 20px black;
-    transition: 0.5s;
-}
-.topup:hover
-{
-    transform: translateY(-10px);
-}
 .btn
 {
     display: none;
@@ -174,7 +169,11 @@
 .header
 {
     height: 60px;
-    background-color:rgba(0, 0, 0, 0.900);
+    transition: 0.5s;
+}
+.overlay
+{
+    top: 60px;
 }
 .background
 {
@@ -204,9 +203,8 @@
 .list
 {
     z-index: 2;
-    width: 0px;
-    max-width: 500px;
-    height: 100vh;
+    width: 100vw;
+    height: 0px;
     background-color:rgba(0, 0, 0, 0.900);
     position: fixed;
     overflow: hidden;
@@ -269,12 +267,11 @@
 .main
 {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 0%;
     width: 100%;
-    height: 60%;
+    height: 50%;
     text-align: center;  
-    background-color: transparent;
 }
 .searchbox
 {
@@ -287,26 +284,26 @@
     border: 1px solid white;
     border-radius: 5px;
     padding: 0px 10px;
-    background-color: rgba(0, 0, 0, 0.300);
+    background-color:rgba(0, 0, 0, 0.400);
 }
 .searchbox input
 {
     background-color: transparent;
     border: none;
-    width: 90%;
+    width: 85%;
     height: 45px;
     color: white;
     padding-right: 10px;
 }
+.searchbox input::placeholder
+{
+    color: rgba(255, 255, 255, 0.800);
+}
 .searchbox a
 {
-    text-decoration: none;
+    display: inline-block;
     color: white;
     font-size: 20px;
-}
-.searchbox ::placeholder
-{
-    color: rgb(211, 209, 209);
 }
 .main h1
 {
@@ -341,8 +338,8 @@
 }
 .cbtn
 {
-    border: 1.5px solid greenyellow;
-    color: greenyellow;
+    border: 1.5px solid #33FF57;
+    color: #33FF57;
 }
 .sbtn
 {
@@ -351,7 +348,7 @@
 }
 .cbtn:hover
 {
-    background-color: greenyellow;
+    background-color: #33FF57;
     color: black;
 }
 .sbtn:hover
@@ -359,13 +356,32 @@
     background-color: orangered;
     color: black;
 }
+.topup
+{
+    z-index: 10;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    background-color: #900C3F ;
+    box-shadow: 0px 2px 20px black;
+    transition: 0.5s;
+}
+.topup:hover
+{
+    transform: translateY(-10px);
+}
 @media(max-width:1080px)
 {
-    .main
-    {
-        position: absolute;
-        top: 40%;
-    }
+.background
+{
+    background-position: center;
+}
 .main h1
 {
     font-size: 28px;
@@ -377,7 +393,7 @@
     font-size: 18px;
     color:white; 
 }
-.main a
+.cbtn, .sbtn
 {
     height: 45px;
     width: 130px;
@@ -391,19 +407,29 @@
 
 }
 
-/* Course Starts */
+/* Course Starts 
 
-.coursebox
+.skew
 {
-    z-index: -1;
+    transform: rotate(2deg);
+    background-color: crimson; 
     position: absolute;
     height: 80%;
-    width: 95%;
-    top: 120%;
-    left: 2.5%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-    background-color: crimson;  
+    width: 106%;
+    top: 110%;
+    left: -3%;
+    box-sizing: border-box; 
+
+}
+*/
+.coursebox
+{
+    background-color: crimson; 
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 110%;
+    left: 0%;
 }
 .ctxt h3
 {
@@ -523,10 +549,9 @@
     z-index: -1;
     position: absolute;
     height: 80%;
-    width: 95%;
-    top: 220%;
-    left: 2.5%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 200%;
+    left: 0%;
     box-sizing: border-box;
     background-color:darkviolet;   
 }
@@ -563,7 +588,9 @@
 }
 .eflex2
 {
-    margin-left: 1.5%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
     display: inline-flex;
     color:black;
     background-color: transparent;
@@ -656,10 +683,9 @@
     z-index: -1;
     position: absolute;
     height: 80%;
-    width: 95%;
-    top: 320%;
-    left: 2.5%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 290%;
+    left: 0%;
     box-sizing: border-box;
     background-color:#009B77;  
 }
@@ -740,10 +766,9 @@
     position: absolute;
     box-sizing: border-box;
     height: 85%;
-    width: 95%;
-    top: 420%;
-    left: 2.5%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 380%;
+    left: 0%;
     background-color:orangered;  
     display: inline-block;
 }
@@ -777,7 +802,7 @@
 }
 .pbox .fa-times
 {
-    color: maroon;
+    color: red;
 }
 .pbox .fa-check
 {
@@ -830,10 +855,10 @@
 .pbox a
 {
     z-index: 1;
-    background: linear-gradient(to left top, #7579ff, #b224ef);
+    background: teal;
     display: block;
     margin-left: 80px;
-    margin-top: 40px;
+    margin-top: 35px;
     width: 150px;
     height: 40px;
     color: white ;
@@ -843,13 +868,11 @@
     border-radius: 50px;
     transition: 0.5s;
     font-size: 15px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .pbox a:hover
 {
-    background-color: black ;
-    color: white;
-    transform: scale(1.1); 
+    background-color: white ;
+    color: teal;
 }
 @media(max-width:1080px)
 {
@@ -917,7 +940,7 @@
 .footer
 {
     position: absolute;
-    top: 530%;
+    top: 480%;
     height: 300px;
     width: 100%;
     box-sizing: border-box;
