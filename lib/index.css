@@ -9,11 +9,21 @@
     font-weight: 300;
     scroll-behavior: smooth;
 }
-
-/* Menu Starts */
 body
 {
     overflow-x: hidden;
+}
+
+/* Main Starts */
+
+.main
+{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    text-align: center;  
 }
 .fa-check-circle-o
 {
@@ -39,239 +49,6 @@ body
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.500);
-}
-.header
-{
-    z-index: 2;
-    position: fixed;
-    display: inline-flex;
-    justify-content: space-around;
-    top: 0%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.500);
-    height: 80px;
-    width: 100%;
-}
-.logo
-{
-    width: 120px;
-    margin-top: -10px;
-}
-
-.list
-{
-    text-align: center;     
-}
-
-.list ul
-{
-    display: inline-flex;
-    list-style: none;
-    color:white;
-}
-
-.list ul li
-{
-    width: 130px;
-    margin: 18px 5px;
-    padding: 8px 5px;
-}
-
-.list ul li a
-{
-    text-decoration: none;
-    color:white;
-}
-
-.active, .list ul li:hover 
-{
-    background-color: rgba(128, 128, 128, 0.600);;
-    border-radius: 3px;
-}
-.sub-menu-1
-{
-    display:none;
-}
-
-.list ul li:hover .sub-menu-1
-{
-    display: block;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.500);
-    margin-top: 8px;
-    margin-left: -55px;
-    border-radius: 5px;
-}
-.list ul li:hover .sub-menu-1 ul
-{
-    display: block;
-    margin: 12px;
-}
-.list ul li:hover .sub-menu-1 ul li
-{
-    width: 200px;
-    padding: 10px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.800);
-}
-.list ul li:hover .sub-menu-1 ul li:last-child
-{
-    border: none;
-    padding: 7px;
-}
-.fa
-{
-    margin: 6px;
-}
-.sub-menu-2
-{
-    display: none;
-}
-.hover1:hover .sub-menu-2
-{
-    display: block;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.500);
-    margin-top: -48px;
-    margin-left: 192px;
-    border-radius: 5px;
-}
-.signin
-{
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    height: 40px;
-    width: 100px;
-    margin-top: 20px;
-    padding-top: 8px;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: 0.3s;
-    text-decoration: none;
-    border: 2px solid #ff0562;
-    background-color: #ff0562;
-    transition: all ease 0.5;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-.signin:hover
-{
-    border: 2px solid #ff0562;
-    background-color: transparent;
-    color: #ff0562;
-}
-.btn
-{
-    display: none;
-}
-@media(max-width:1080px)
-{
-.header
-{
-    height: 60px;
-    transition: 0.5s;
-}
-.overlay
-{
-    top: 60px;
-}
-.background
-{
-    background-position: right;
-}
-.logo
-{
-    width: 100px;
-    margin-top: -15px;
-}
-.btn
-{
-    display: inline;
-    font-size: 20px;
-    color: white;
-    background: transparent;
-    font-weight: lighter;
-}
-.signin
-{
-    padding-top: 8px;
-    margin-top: 12px;
-    font-size: 13px;
-    height: 35px;
-    width: 80px;
-}
-.list
-{
-    z-index: 2;
-    width: 100vw;
-    height: 0px;
-    background-color:black;
-    position: fixed;
-    overflow: hidden;
-    left: 0;
-    top: 60px;
-    transition: all .5s;
-}
-.list ul
-{
-    display: inline-block;
-    text-align: left;
-}
-.list ul li
-{
-    border-bottom: 1px solid grey;
-    padding-bottom: 5px;
-    background-color: none;
-}
-
-.active, .list ul li:hover
-{
-    background-color: transparent;
-    border-radius: 0px;
-}
-.list ul li a
-{
-    font-size: 15px;
-}
-.list ul li a:hover
-{
-    opacity: 0.6;
-}
-.list ul li:hover .sub-menu-1
-{
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    margin-top: 0;
-    margin-left: -20px;
-}
-.list ul li:hover .sub-menu-1 ul li
-{
-    width: 150px;
-    border-bottom: 1px solid grey;
-
-}
-.sub-menu-2
-{
-    display: none;
-}
-#closebtn
-{
-    display: none;
-}
-
-}
-
-/* Main Starts */
-
-.main
-{
-    position: absolute;
-    top: 30%;
-    left: 0%;
-    width: 100%;
-    height: 50%;
-    text-align: center;  
 }
 .searchbox
 {
@@ -378,9 +155,9 @@ body
 }
 @media(max-width:1080px)
 {
-.background
+.overlay
 {
-    background-position: center;
+    top: 60px;
 }
 .main h1
 {
