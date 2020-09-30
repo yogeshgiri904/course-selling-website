@@ -30,10 +30,10 @@ body
     height: 100%;
     padding: 20px 20px 20px 20px;
     background: white;
-    background-image: url("https://www.flaticon.com/svg/static/icons/svg/3319/3319680.svg");
+    background-image: url(../img/pf.png);
     background-repeat: no-repeat;
-    background-size: 400px 400px;
-    background-position: left bottom;
+    background-size: 200px 200px;
+    background-position: right bottom;
 }
 .formbox3
 {
@@ -150,7 +150,7 @@ input[type="password"]
 .socialbox
 {
     position: absolute;
-    bottom: 10%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%);
     text-align: center;
@@ -160,6 +160,8 @@ input[type="password"]
     color: black;
     font-size: 15px;
     padding-bottom: 10px;
+    font-weight: bold;
+
 }
 .social
 {
@@ -236,12 +238,12 @@ input[type="password"]
         transform: none;
         height: 100%;
         width: 100%;
-        background-size: 200px 200px;
+        background-size: 100px 100px;
         padding: 0;
     }
     .formbox2 h2
     {
-        margin-top: 100px;
+        margin-top: 90px;
     }
     .formbox2 p
     {
@@ -249,7 +251,7 @@ input[type="password"]
     }
     .form
     {
-        top: 55%;
+        top: 56%;
         width: 320px;
     }
     .form
@@ -274,15 +276,14 @@ input[type="password"]
     .socialbox
     {
         position: absolute;
-        bottom: 5%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%);
     }
     .socialbox p
     {
         font-size: 15px;
-        padding-bottom: 10px;
-        text-align: center;
+        padding-bottom: 15px;
     }
     .social
     {
