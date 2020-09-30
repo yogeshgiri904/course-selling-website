@@ -32,7 +32,7 @@ body
     background: white;
     background-image: url("https://www.flaticon.com/svg/static/icons/svg/3319/3319680.svg");
     background-repeat: no-repeat;
-    background-size: 500px 500px;
+    background-size: 400px 400px;
     background-position: left bottom;
 }
 .formbox3
@@ -41,26 +41,20 @@ body
     width: 100%;
     height: 180px;
 }
-.formbox3 h1
-{
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
 .formbox3 h2
 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 30px;
+
 }
 .formbox3 p
 {
     text-align: center;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
 }
 .formbox3 a
 {
@@ -70,16 +64,18 @@ body
 }
 .formbox3 a:hover
 {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .form
 {
     position: absolute;
     left: 50%;
-    top: 54%;
+    top: 50%;
     transform: translate(-50%,-50%);
     width: 350px;
-    height: 400px; 
+    height: 350px; 
+    background-color: white;
+    border-radius: 5px;
 }
 .form p
 {
@@ -132,7 +128,7 @@ input[type="password"]
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
-    border: 2px solid #900C3F;
+    border: 2px solid crimson;
     border-radius: 20px;
     margin-top: 40px;
     font-size: 15px ;
@@ -141,7 +137,7 @@ input[type="password"]
     font-family: 'Raleway';
     font-weight: bold;
     background-color: transparent;
-    color: #900C3F;
+    color: crimson;
     transition: 0.3s;
     box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.200);
 }
@@ -149,7 +145,7 @@ input[type="password"]
 {
     cursor: pointer;
     color: white;
-    background-color: #900C3F;
+    background-color: crimson;
 }
 .socialbox
 {
@@ -157,12 +153,13 @@ input[type="password"]
     bottom: 10%;
     left: 50%;
     transform: translate(-50%);
+    text-align: center;
 }
 .socialbox p
 {
+    color: black;
     font-size: 15px;
     padding-bottom: 10px;
-    text-align: center;
 }
 .social
 {
@@ -239,21 +236,21 @@ input[type="password"]
         transform: none;
         height: 100%;
         width: 100%;
-        background-size: 300px 300px;
+        background-size: 200px 200px;
         padding: 0;
     }
-    .formbox2 h1
+    .formbox2 h2
     {
-        margin-top: 70px;
+        margin-top: 100px;
     }
     .formbox2 p
     {
-        font-size: 12px;
+        font-size: 13px;
     }
     .form
     {
-        top: 58%;
-        width: 280px;
+        top: 55%;
+        width: 320px;
     }
     .form
     input[type="text"],
@@ -263,12 +260,12 @@ input[type="password"]
     {
         border: 1.5px solid black;
         border-radius: 2px;
-        height: 10px;
-        font-size: 12px;
+        height: 12px;
+        font-size: 13px;
     }
     .form label
     {
-        font-size: 10px;
+        font-size: 12px;
     }
     .form p
     {

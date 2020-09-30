@@ -797,14 +797,15 @@ body
     margin: 3px;
     border: 2px solid crimson;
     border-radius: 3px;
-    background-color: transparent;
-    color: crimson;
+    background-color: crimson;
+    color: white; 
 }
 .contact input[type="submit"]:hover
 {
     cursor: pointer;
-    background-color: crimson;
-    color: white;  
+    background-color: transparent;
+    color: crimson;
+     
 }
 .social
 {
@@ -882,8 +883,7 @@ body
     bottom: 0;
     left: 0;
     font-size: 15px;
-    color: rgb(92, 92, 92);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: grey;
 }
 @media(max-width:1080px)
 {

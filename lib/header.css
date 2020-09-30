@@ -109,7 +109,7 @@
     line-height: 36px;
     margin-top: 20px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 4px;
     transition: 0.3s;
     text-decoration: none;
     border: 2px solid #ff0562;
@@ -164,7 +164,7 @@
     height: 0px;
     background-color:black;
     position: fixed;
-    overflow: hidden;
+    overflow-x: hidden;
     left: 0;
     top: 60px;
     transition: all .5s;
@@ -180,7 +180,10 @@
     padding-bottom: 5px;
     background-color: none;
 }
-
+.list ul li:last-child
+{
+     border-bottom: none;
+}
 .active, .list ul li:hover
 {
     background-color: transparent;
