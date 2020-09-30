@@ -153,7 +153,7 @@
     width: 80vw;
     height: 60vh;
     background-color: white;
-    border: 2px solid crimson;
+    border: 1px solid crimson;
     border-radius: 5px;
 }
 .atext
@@ -264,7 +264,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    padding: 6px;
+    padding: 7px;
     left: 50%;
     top: 30%;
     transform: translate(-50%,-50%);
@@ -310,7 +310,7 @@
 .overlay .item
 {
     left: 45%;
-    bottom: 10%;
+    bottom: 20%;
     font-size: 30px;
 }
 .skew
@@ -337,7 +337,7 @@
     transform: translate(-50%,-50%);
     width: 220px;
     height: 220px;
-    padding: 6px;
+    padding: 8px;
 }
 .atext
 {

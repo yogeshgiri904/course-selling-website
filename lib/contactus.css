@@ -115,7 +115,7 @@ input[type=submit]
     border: 2px solid #C70039;
     background-color:#C70039;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'poppins';
     font-weight: bold;
 
@@ -228,7 +228,7 @@ input[type=submit]:hover
     {
         position: absolute;
         top: 30%;
-        bottom: 0;
+        bottom: 0%;
         left: 0;
         right: 0;
         display: inline-block;
@@ -240,13 +240,13 @@ input[type=submit]:hover
     .contact input, .contact textarea
     {
         width: 98%;
-        height: 26px;
+        height: 28px;
         font-size: 12px;
     }
     .contact select
     {
         width: 101%;
-        height: 28px;
+        height: 30px;
         margin-top: 5px;
         font-size: 12px;
     }
@@ -257,7 +257,7 @@ input[type=submit]:hover
     }
     .sobtn
     {
-        margin-top: 5px;
+        margin-top: 0px;
     }
     h1
     {

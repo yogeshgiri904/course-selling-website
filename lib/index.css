@@ -2,20 +2,39 @@
 {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
     outline: none;
-    border: none;
     font-family: "Raleway";
     font-weight: 300;
     scroll-behavior: smooth;
 }
 body
 {
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 
 /* Main Starts */
 
+.background
+{
+    position: absolute;
+    background-image: url("https://pixabay.com/get/53e6dc424f51b108feda8460da29317e143bd6ed5a5174_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.overlay
+{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
 .main
 {
     position: absolute;
@@ -28,27 +47,6 @@ body
 .fa-check-circle-o
 {
     color: #25D366;
-}
-.background
-{
-    position: absolute;
-    background-image: url("https://pixabay.com/get/53e6dc424f51b108feda8460da29317e143bdbe1545574_1920.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.overlay
-{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.500);
 }
 .searchbox
 {
@@ -179,7 +177,7 @@ body
 }
 .searchbox
 {
-    width: 90%;
+    width: 80%;
 }
 
 }
@@ -334,6 +332,7 @@ body
 }
 .eflex1
 {
+    box-sizing: border-box;
     height: auto;
     width: 100%;
     background-color: transparent;
@@ -565,16 +564,16 @@ body
 }
 .pbox
 {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to left top, #b224ef, #7579ff);
+    background-color: rgba(0, 0, 0, 0.400);
     border: none;
     width: 300px;
-    height: 400px;
+    height: 380px;
     padding-top: 20px;
     border-radius: 3px;
     text-align: center;
     transition: 0.3s;
     display: inline-block;
+    color: white;
 }
 .pbox .fa-times
 {
@@ -619,6 +618,7 @@ body
     height: 30px;
     line-height: 30px;
     background-color: gold;
+    color: black;
     position: relative;
     top: 20px;
     right: -40px;
@@ -631,17 +631,17 @@ body
 .pbox a
 {
     z-index: 1;
-    background: linear-gradient(to right, #b224ef, #7579ff);
+    background-color: rgba(0, 0, 0, 0.450);
+    border: 1px solid white;
     display: block;
     margin-left: 80px;
-    margin-top: 35px;
+    margin-top: 5px;
     width: 150px;
     height: 40px;
     color: white ;
     text-decoration: none;
-    border: none;
     line-height: 40px;
-    border-radius: 50px;
+    border-radius: 3px;
     font-size: 15px;
 }
 .pbox a:hover
@@ -653,7 +653,6 @@ body
 {
     .pricingbox
     {
-        z-index: -1;
         position: absolute;
         top: 800%;
         width: 100%;
@@ -664,13 +663,12 @@ body
     .pflex2
     {
         position: relative;
-        top: 50%;
+        top: 0%;
         left: 50%;
         width: 300px;
-        transform: translate(-50%, 0%);
+        transform: translate(-50%);
         margin-top: 20px;
         display: inline-block;
-        justify-content: space-between;
     }
     .pbox
     {
@@ -699,29 +697,21 @@ body
         text-align: left;
         font-size: 15px;
     }
-    .pbox p
-    {
-        margin-top: 30px;
-    }
-    .pbox a
-    {
-        margin-top: 30px;
-    }
-       
-
+    
 }
 
 /* footer Starts */
 .footer
 {
     position: absolute;
+    bottom: 0%;
     top: 480%;
     height: 300px;
     width: 100%;
-    box-sizing: border-box;
     background-color: #000000;
     display: inline-flex;
     color: white;
+    box-sizing: border-box;
 }
 .footer h3
 {
@@ -809,25 +799,22 @@ body
 {
     display: inline-flex;
     text-align: center;
+    padding: 10px;
 }
 .social a
 {  
-    margin-left: 10px;
-    display: flex;
-    width: 40px;
+    display: block;
+    width: 45px;
     height: 40px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 100px;
-    padding: 5px;
-    text-align: center;
+    margin-left: 10px;
     font-size: 20px;
+    padding-top: 5px;
+    border-radius: 100px;
     color: white;
     transition: 0.5s;
 }
 .social a:nth-child(1)
 {
-    padding-left: 8px;
     background-color:#3B5998;
 }
 .social a:nth-child(1):hover
@@ -846,7 +833,6 @@ body
 }
 .social a:nth-child(3)
 {
-    padding-left: 4px;
     background-color:#D44638;
 }
 .social a:nth-child(3):hover
@@ -874,6 +860,7 @@ body
 }
 .copyright
 {
+    box-sizing: border-box;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -887,8 +874,9 @@ body
 {
     .footer
     {
+
         position: absolute;
-        top: 1100%;
+        top: 1030%;
         display: inline-block;
         height: 400px;
     }
@@ -919,7 +907,7 @@ body
     .social
     {
         position: absolute;
-        bottom: 70px;
+        bottom: 60px;
         left: 50%;
         transform: translate(-50%);
     }

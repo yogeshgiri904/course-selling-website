@@ -10,6 +10,7 @@
 }
 .header
 {
+    box-sizing: border-box;
     z-index: 2;
     position: fixed;
     display: inline-flex;
@@ -104,13 +105,13 @@
     display: block;
     text-align: center;
     font-size: 18px;
-    height: 40px;
+    height: 38px;
     width: 100px;
-    line-height: 36px;
+    line-height: 38px;
     margin-top: 20px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s;
+    border-radius: 50px;
+    transition: 0.5s;
     text-decoration: none;
     border: 2px solid #ff0562;
     background-color: #ff0562;
@@ -153,7 +154,7 @@
 {
     margin-top: 14px;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 32px;
     height: 32px;
     width: 80px;
 }
