@@ -32,7 +32,7 @@ body
 .background
 {
     position: absolute;
-    background-image: url("https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg");
+    background-image: url("https://pixabay.com/get/53e6dc424f51b108feda8460da29317e143bdbe1545574_1920.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -565,7 +565,6 @@ body
 }
 .pbox
 {
-    background-color: green;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     background: linear-gradient(to left top, #b224ef, #7579ff);
     border: none;
@@ -632,7 +631,7 @@ body
 .pbox a
 {
     z-index: 1;
-    background: teal;
+    background: linear-gradient(to right, #b224ef, #7579ff);
     display: block;
     margin-left: 80px;
     margin-top: 35px;
@@ -643,13 +642,12 @@ body
     border: none;
     line-height: 40px;
     border-radius: 50px;
-    transition: 0.5s;
     font-size: 15px;
 }
 .pbox a:hover
 {
     background-color: white ;
-    color: teal;
+    background: linear-gradient(to left top, #b224ef, #7579ff);
 }
 @media(max-width:1080px)
 {
