@@ -238,12 +238,12 @@ input[type="password"]
         transform: none;
         height: 100%;
         width: 100%;
-        background-size: 100px 100px;
+        background-size: 150px 150px;
         padding: 0;
     }
     .formbox2 h2
     {
-        margin-top: 90px;
+        margin-top: 100px;
     }
     .formbox2 p
     {
@@ -251,7 +251,7 @@ input[type="password"]
     }
     .form
     {
-        top: 56%;
+        top: 54%;
         width: 320px;
     }
     .form
@@ -276,7 +276,7 @@ input[type="password"]
     .socialbox
     {
         position: absolute;
-        top: 85%;
+        top: 82%;
         left: 50%;
         transform: translate(-50%);
     }
