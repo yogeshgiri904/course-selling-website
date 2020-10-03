@@ -17,7 +17,7 @@ body
 .background
 {
     position: absolute;
-    background-image: url("https://pixabay.com/get/53e6dc424f51b108feda8460da29317e143bd6ed5a5174_1920.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_1280.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -153,6 +153,10 @@ body
 }
 @media(max-width:1080px)
 {
+.background
+{
+    background-position: right;
+}
 .overlay
 {
     top: 60px;
@@ -793,7 +797,6 @@ body
     cursor: pointer;
     background-color: transparent;
     color: crimson;
-     
 }
 .social
 {
@@ -805,10 +808,10 @@ body
 {  
     display: block;
     width: 45px;
-    height: 40px;
+    height: 38px;
     margin-left: 10px;
     font-size: 20px;
-    padding-top: 5px;
+    padding-top: 7px;
     border-radius: 100px;
     color: white;
     transition: 0.5s;
@@ -896,7 +899,7 @@ body
     }
     .contact
     {
-        width: 100%;
+        width: 95%;
         margin-top: -10px;
         padding: 12px;
     }
@@ -909,7 +912,7 @@ body
         position: absolute;
         bottom: 60px;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-55%);
     }
     .copyright
     {
