@@ -7,10 +7,6 @@
     font-weight: 300;
     scroll-behavior: smooth;
 }
-body
-{
-    overflow-x: hidden;    
-}
 
 /* Main Starts */
 
@@ -186,29 +182,38 @@ body
 
 }
 
-/* Course Starts 
+/*Course Starts*/
 
-.skew
+.sitebody
 {
-    transform: rotate(2deg);
-    background-color: crimson; 
     position: absolute;
-    height: 80%;
-    width: 106%;
-    top: 110%;
-    left: -3%;
-    box-sizing: border-box; 
-
-}
-*/
-.coursebox
-{
-    background-color: crimson; 
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    top: 110%;
+    top: 100%;
     left: 0%;
+    width: 100vw;    
+    height: fit-content;
+}
+.child
+{
+    background-color: darkred;
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.child:nth-child(2)
+{
+    background-color: rebeccapurple;
+}
+.child:nth-child(3)
+{
+    background-color: teal;
+}
+.child:nth-child(4)
+{
+    background-color: orangered;
+}
+.child:last-child
+{
+    padding: 0px;
 }
 .ctxt h3
 {
@@ -224,7 +229,7 @@ body
     padding-top: 5px;
     display: inline-flex;
     font-weight: 500;
-    font-family: sans-serif;
+    font-family: 'Times New Roman';
 }
 .offr
 {
@@ -240,13 +245,10 @@ body
     width: 40px;
     height: 40px;
     display: inline-block; 
-    justify-content: space-around;
     color: crimson ;
-    text-decoration: none;
     border: 2px solid crimson;
     background-color: transparent;
-    border-radius: 100px;
-    transition: 0.3s;
+    border-radius: 3px;
 }
 .ctxt button:hover
 {
@@ -275,18 +277,21 @@ body
     color: black;
     text-decoration: none;
 }
+.vmlink
+{
+    width: 100vw;
+    height: 10px;
+    display: inline-block;
+}
 .explore
 {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
+    margin-right: 8%;
+    float: right;
     width: 120px;
     height: 30px;
-    display: block;
     text-align: center;
     border: 1px solid white;
-    border-radius: 100px;
-    float: right;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
     transition: 0.4s;
@@ -298,23 +303,10 @@ body
 }
 @media(max-width:1080px)
 {
-    .coursebox
-{
-    z-index: -1;
-    position: absolute;
-    height: auto;
-    width: 100%;
-    top: 105%;
-    left: 0%;
-    box-shadow: none;
-    box-sizing: border-box;
-    background-color: crimson;  
-    padding-bottom: 40px;
-}
 .explore
 {
     position: absolute;
-    bottom: .5%;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%);
  
@@ -323,17 +315,6 @@ body
 
 /* Expert Starts */
 
-.expertbox
-{
-    z-index: -1;
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    top: 200%;
-    left: 0%;
-    box-sizing: border-box;
-    background-color:darkviolet;   
-}
 .eflex1
 {
     box-sizing: border-box;
@@ -405,18 +386,9 @@ body
     cursor: pointer;
     transform:scale(1.05);
 }
-@media(max-width:1080px)
+
+    @media(max-width:1080px)
 {
-    .expertbox
-{
-    z-index: -1;
-    position: absolute;
-    height: auto;
-    width: 100%;
-    top: 420%;
-    left: 0%;
-    box-shadow: none;  
-}
 .no1
 {
     display: none;
@@ -454,31 +426,20 @@ body
     margin-bottom: 25px;
     transition: 0.3s;
 }
-
 }
 
 /* Testimonial starts */
-.testimonials
-{
-    z-index: -1;
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    top: 290%;
-    left: 0%;
-    box-sizing: border-box;
-    background-color:#009B77;  
-}
+
 .testbox2
 { 
     position: relative;
-    border: 1.5px solid black;
-    border-radius: 5px;
-    margin-left: 20%;
-    margin-top: 20px;
-    width: 60%;
-    height: 55%;
-    display: grid;  
+    left: 50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    width: 60vw;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 .test-avatar img
 {
@@ -506,14 +467,6 @@ body
 }
 @media(max-width:1080px)
 {
-    .testimonials
-    {
-        position: absolute;
-        top: 710%;
-        box-shadow: none;
-        left: 0;
-        width: 100%;
-    }
     .testbox2
     {
         margin-top: 10%;
@@ -541,30 +494,15 @@ body
 
 /*pricing starts*/
 
-.pricingbox
-{
-    position: absolute;
-    box-sizing: border-box;
-    height: 85%;
-    width: 100%;
-    top: 380%;
-    left: 0%;
-    background-color:orangered;  
-    display: inline-block;
-}
 .pflex2
 {
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%);
     display: inline-flex;
     justify-content: space-between;
     width: 70%;
     height: 70%;
-    margin-top: 70px;
-    background-color: transparent;
-    box-sizing: border-box;
 }
 .pbox
 {
@@ -647,23 +585,15 @@ body
     line-height: 40px;
     border-radius: 3px;
     font-size: 15px;
+    font-weight: bold;
 }
 .pbox a:hover
 {
     background-color: white ;
-    background: linear-gradient(to left top, #b224ef, #7579ff);
+    color: black;
 }
 @media(max-width:1080px)
 {
-    .pricingbox
-    {
-        position: absolute;
-        top: 800%;
-        width: 100%;
-        height: auto;
-        left: 0%;
-        box-shadow: none;
-    }
     .pflex2
     {
         position: relative;
@@ -707,12 +637,7 @@ body
 /* footer Starts */
 .footer
 {
-    position: absolute;
-    bottom: 0%;
-    top: 480%;
-    height: 300px;
-    width: 100%;
-    background-color: #000000;
+    background-color: black;
     display: inline-flex;
     color: white;
     box-sizing: border-box;
@@ -773,7 +698,7 @@ body
 }
 .contact input[type="email"]
 {
-    height: 30px;
+    height: 35px;
     width: 80%;
     margin: 3px;
     padding-left: 10px;
@@ -784,13 +709,14 @@ body
 }
 .contact input[type="submit"]
 {
-    height: 30px;
+    height: 35px;
     width: 30%;
     margin: 3px;
     border: 2px solid crimson;
     border-radius: 3px;
     background-color: crimson;
-    color: white; 
+    color: white;
+    font-weight: bold; 
 }
 .contact input[type="submit"]:hover
 {
@@ -802,7 +728,7 @@ body
 {
     display: inline-flex;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 .social a
 {  
@@ -863,25 +789,22 @@ body
 }
 .copyright
 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 35px;
+    line-height: 30px;
     text-align: center;
-    padding-bottom: 15px;
-    bottom: 0;
-    left: 0;
     font-size: 15px;
     color: grey;
+    background-color: rgb(29, 29, 29);
 }
 @media(max-width:1080px)
 {
     .footer
     {
-
-        position: absolute;
-        top: 1030%;
         display: inline-block;
-        height: 400px;
     }
     .about
     {
@@ -891,33 +814,28 @@ body
     }
     .about p
     {
-        font-size: 12px;
+        font-size: 13px;
     }
     .address
     {
         display: none;
     }
+    .social
+    {
+        margin-top: -10px;
+    }
     .contact
     {
         width: 95%;
-        margin-top: -10px;
-        padding: 12px;
+        height: 150px;
     }
     .contact h3
     {
         display: none;
     }
-    .social
-    {
-        position: absolute;
-        bottom: 60px;
-        left: 50%;
-        transform: translate(-55%);
-    }
     .copyright
     {
-        font-size: 12px;
-        padding: 20px 50px;
+        font-size: 11px;
     }
 }
 
