@@ -70,11 +70,40 @@
     </nav>
 
 <div class="formbox1">
-    <div class="formbox2">
+
+    <div class="formbox2" id="signin">
+        <div class="formbox3">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/265/265674.svg" class="avt">
+            <h2>Welcome Back, Sign In</h2>
+            <p>Sign In to your existing account at Shri Ram Organization. </p>
+            <p>Don't have an account? <button onclick="change()">Sign Up</button></p>
+        </div>
+        <div class="form">
+            <input type="text" id="user" placeholder="Enter Username" onkeyup="validateUser()"><p class="p0" id="p0"></p>
+            <input type="password" id="pass" placeholder="Enter Password" onkeyup="strPass()">
+            <button id="seen" class="eye" onclick="seen()"><i class="fa fa-eye" aria-hidden="true"></i></button>
+            <button id="hide" class="eye" onclick="hide()"><i class="fa fa-eye-slash" aria-hidden="true"></i></button><p class="p1" id="p1"></p>
+            <input type="checkbox" value="check">
+            <label for="check">Remember on this device. </label>
+            <a href="#"> Forgot Password?</a>
+            <input type="submit" value="Sign In" >
+        </div>
+        <div class="socialbox">
+            <p>OR Sign In With</p>
+                <div class="social">
+                    <a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+        </div>
+    </div>
+
+    <div class="formbox2" id="signup">
         <div class="formbox3">
             <h2>Welcome, Sign Up Now</h2>
             <p>Hey! Are you new here? Create an account now for free.</p>
-            <p>Already have an account? <a href="signin.html">Sign in <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+            <p>Already have an account? <button onclick="change()">Sign In</button></p>
         </div>
         <div class="form">
             <fworm id="form">
@@ -89,12 +118,11 @@
             <label for="check">I accept all the <a href="#">Terms & Conditions</a>.</label></br>
             <input type="checkbox" value="check">
             <label for="check">I want to receive updates on my email.</label>
-            <input type="submit" value="Submit" >
+            <input type="submit" value="Sign Up" >
             </form>
         </div>
-
         <div class="socialbox">
-            <p>OR Sign up with</p>
+            <p>OR Sign Up With</p>
                 <div class="social">
                     <a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a>
                     <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -103,7 +131,28 @@
                 </div>
         </div>
     </div>
-</div>
 
+</div>
 </body>
 </html>
+
+
+<script>
+    var x = 0;
+    function change()
+    {
+        if(x==0)
+        {
+            document.getElementById('signup').style.display='inline';
+            document.getElementById('signin').style.display='none';
+            return x=1;
+        }
+        else
+        {
+            document.getElementById('signin').style.display='inline';
+            document.getElementById('signup').style.display='none';
+            return x=0;
+        }
+        
+    }
+</script>

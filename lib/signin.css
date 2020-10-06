@@ -13,7 +13,7 @@ body
     width: 70%;
     border-radius: 4px;
     overflow: hidden;
-    background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_960_720.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/19/18/20/tea-time-3240766_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -23,9 +23,8 @@ body
 .formbox2
 {
     position: absolute;
-    left: 0px;
     top: 0px;
-    overflow: hidden;
+    left: 0px;
     width: 70%;
     height: 100%;
     padding: 20px 20px 20px 20px;
@@ -34,6 +33,30 @@ body
     background-repeat: no-repeat;
     background-size: 200px 200px;
     background-position: right bottom;
+}
+.avt
+{
+    position: relative;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    border: 1px solid black;
+    padding: 6px;
+}
+#signup
+{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 30%;
+}
+#signup .form
+{
+    top: 48%;
 }
 .formbox3
 {
@@ -47,8 +70,7 @@ body
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 30px;
-
+    margin-top: 20px;
 }
 .formbox3 p
 {
@@ -56,21 +78,19 @@ body
     color: black;
     font-size: 16px;
 }
-.formbox3 a
+.formbox3 button
 {
-    color: rgb(192, 17, 17);
-    text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
-}
-.formbox3 a:hover
-{
-    opacity: 0.8;
+    color: teal;
+    background-color: transparent;
+    cursor: pointer;
 }
 .form
 {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%,-50%);
     width: 350px;
     height: 350px; 
@@ -119,7 +139,7 @@ input[type="password"]
 }
 .form a
 {
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
     font-weight: bold;
     color: teal;
@@ -237,21 +257,27 @@ input[type="password"]
         width: 100%;
         border-radius: 0px;
         background-image: none;
+        background-color: white;
+    }
+    #signup
+    {
+        left: 0%;
+        top: 80px;
+    }
+    #signup .form{
+        top: 33%;
+
     }
     .formbox2
     {
         position: absolute;
         left: 0%;
-        top: 0%;
+        top: 80px;
         transform: none;
-        height: 100%;
+        height: 90%;
         width: 100%;
         background-size: 150px 150px;
         padding: 0;
-    }
-    .formbox2 h2
-    {
-        margin-top: 100px;
     }
     .formbox2 p
     {
@@ -259,8 +285,9 @@ input[type="password"]
     }
     .form
     {
-        top: 54%;
+        top: 55%;
         width: 320px;
+        height: 200px;
     }
     .form
     input[type="text"],
@@ -284,7 +311,7 @@ input[type="password"]
     .socialbox
     {
         position: absolute;
-        top: 82%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%);
     }
