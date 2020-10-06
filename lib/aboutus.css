@@ -77,7 +77,6 @@
     left: 10%;
     top: 15%;
     font-size: 50px;
-    font-weight: bold;
 }
 .name
 {
@@ -153,7 +152,6 @@
     width: 80vw;
     height: 60vh;
     background-color: white;
-    border: 1px solid crimson;
     border-radius: 5px;
 }
 .atext
@@ -236,7 +234,7 @@
     font-weight: bold;
     color: teal;
     background-color: transparent;
-    border: 1.5px solid teal;
+    border: 2px solid teal;
     border-radius: 20px;
     transition: 0.3s;
 }
@@ -366,6 +364,7 @@
     left: 0px;
     top: -50px;
     background-size: 100px 100px;
+    width: 100px;
 }
 .atext::after
 {
@@ -374,6 +373,8 @@
     right: 0px;
     bottom: 0px;
     background-size: 100px 100px;
+    width: 100px;
+
 }
 .atext a
 {
