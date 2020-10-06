@@ -115,6 +115,14 @@ input[type="password"]
 .form label
 {
     font-size: 13px;
+    font-weight: bold;
+}
+.form a
+{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: teal;
 }
 .form input[type="checkbox"]
 {
