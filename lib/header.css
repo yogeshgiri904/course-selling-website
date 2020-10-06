@@ -177,6 +177,10 @@
 }
 .list ul li
 {
+    position: relative;
+    left: -22%;
+    width: 60vw;
+    padding-left: 45%;
     border-bottom: 1px solid grey;
     padding-bottom: 5px;
     background-color: none;
