@@ -1,0 +1,144 @@
+body
+{
+    position: absolute;
+    top: 80px;
+}
+.main
+{
+    width: 100vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.500);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.testimonials
+{
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    width: 100vw;
+    height: 500px;
+    background-color: coral;
+}
+.testimonials h2
+{
+    font-size: 30px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.container
+{ 
+    display: inline-flex;
+
+}
+.slides
+{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+
+}
+#s2, #s3
+{
+    display: none;
+}
+.slides img
+{
+    width: 180px;
+    border-radius: 180px;
+    border: 1px solid black;
+    padding: 8px;
+}
+.text p
+{
+    margin: 20px;
+}
+.text span
+{
+    font-weight: bold;
+}
+.tbtn
+{
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+#prev
+{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+#next
+{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+
+.head
+{
+    position: relative;
+    top: 400%;
+    left: 0;
+    height: 30%;
+    display: inline-flex;
+    flex-flow: column;
+    width: 100vw;
+    background: transparent;
+    padding: 5px 50px;
+
+}
+.head h2
+{
+    font-size: 40px;
+    font-weight: 900;
+}
+.links
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 60%;
+    text-align: center;
+}
+.links a
+{
+    display: inline-table;
+    text-decoration: none;
+    color: crimson;
+    border: 1px solid crimson;
+    padding: 10px;
+    margin: 10px 2px;
+    border-radius: 50px;
+}
+.links a:hover
+{
+    background-color: crimson;
+    color: white;
+}
+.cont1
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(5, 400px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+.itm1
+{
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+}

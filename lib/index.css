@@ -431,66 +431,82 @@
 
 /* Testimonial starts */
 
-.testbox2
-{ 
+.testimonials
+{
     position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 400px;
+}
+.container
+{ 
+    display: inline-flex;
+}
+.slides
+{
+    position: absolute;
+    top: 0%;
     left: 50%;
     transform: translate(-50%);
-    box-sizing: border-box;
-    width: 60vw;
+    width: 70%;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 3px;
+    padding: 30px;
+    text-align: center;
 }
-.test-avatar img
+#s2, #s3
 {
-    position: absolute;  
-    top: 40px;
-    right: 100px;
-    border: 1px solid black;
-    padding: 6px;
-    border-radius: 50px 0px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    width: 200px;
-    height: 200px;
+    display: none;
 }
-.testbox2 .txt
+.slides img
 {
-    box-sizing: border-box;
-    text-align: right;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    height: 90%;
-    width: 60%;
-    padding: 40px 40px;
+    width: 180px;
+    border-radius: 180px;
+    border: 1px solid black;
+    padding: 8px;
+}
+.text p
+{
+    margin: 20px;
     font-size: 18px;
+}
+.text span
+{
+    font-weight: bold;
+    font-family: "Poppins";
+}
+.tbtn
+{
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+#prev
+{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+#next
+{
+    position: absolute;
+    top: 50%;
+    right: 5%;
 }
 @media(max-width:1080px)
 {
-    .testbox2
-    {
-        margin-top: 10%;
-    }
-    .test-avatar img
+    .slides img
 {
-    position: absolute;  
-    top: -10px;
-    right: 30px;
-    border: 1px solid black;
-    padding: 2px;
-    border-radius: 10px 0px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
-    width: 100px;
-    height: 100px;
-    transition: 0.4s;   
+    margin-top: -20px;
+    width: 150px;
+    padding: 6px;
 }
-    .testbox2 .txt
+.text p
 {
-    padding: 0;
-    margin: 100px 40px;
-    font-size: 10px;
+    margin: 10px;
+    font-size: 15px;
 }
+
 }
 
 /*pricing starts*/
@@ -641,7 +657,6 @@
     background-color: black;
     display: inline-flex;
     color: white;
-    box-sizing: border-box;
 }
 .footer h3
 {

@@ -36,7 +36,7 @@
                         </div></li>
                 </ul>
             </div></li>    
-        <li><a href="#"><i class="fa fa-leanpub" aria-hidden="true"></i>Courses<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <li><a href="courses.html"><i class="fa fa-leanpub" aria-hidden="true"></i>Courses<i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <div class="sub-menu-1">
                 <ul>
                     <li><a href="#">Cyber Security</i></a></li>
@@ -218,19 +218,49 @@
             <p>Watchout these Stories of Empowerment written here in the form of Reviews and Testimonials</p> 
         </div>
         
-        <div class="testbox2">
-            <div class="test-avatar">
-                <img src="img/tp1.png" alt="testimonial1">
+        <div class="testimonials">
+            <button onclick="prev()" id="prev" class="tbtn"> <i class="fa fa-angle-left" aria-hidden="true"></i> </button>
+        <div class="container">
+            <div class="slides" id="s1">
+                <img src="img/tp1.png">
+                <div class="text">
+                    <p>
+                        "Love their services and was so amazed with the support and results that
+                         I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
+                         They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
+                    </p>
+                    <span> Sachin Sahoo </span></br>
+                    <span> 'Data Analayst' </span>
+                </div>
             </div>
-            <div class="txt">     
-            <p> "Love their services and was so amazed with the support and results that
-                 I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
-                 They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
-            </p> </br>
-            <h2>Sachin Sahoo</h2>
-            <p>- Web Designer at NESSCOM</p>
+            <div class="slides" id="s2">
+                <img src="img/test/3.jpg">
+                <div class="text">
+                    <p>
+                        "Love their services and was so amazed with the support and results that
+                         I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
+                         They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
+                    </p>
+                    <span> Cathy Heaven </span></br>
+                    <span> 'Web Developer' </span>
+                </div>
             </div>
-        </div> 
+            <div class="slides" id="s3">
+                <img src="img/test/4.jpg">
+                <div class="text">
+                    <p>
+                        "Love their services and was so amazed with the support and results that
+                         I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
+                         They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
+                    </p>
+                    
+                    <span> Kaira noir </span></br>
+                    <span> 'Executive Designer' </span>
+                </div>
+            </div>
+        </div>
+        <button onclick="next()" id="next" class="tbtn"> <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+        </div>
     </div>
 
 
@@ -336,3 +366,51 @@
 </body>
 </html>
 
+<script>
+    var x = 0;
+    function next()
+    {
+        if(x==0)
+        {
+            document.getElementById('s2').style.display='inline'
+            document.getElementById('s1', 's3').style.display='none'
+            return x=1;
+        }
+        if(x==1)
+        {
+            document.getElementById('s3').style.display='inline'
+            document.getElementById('s2', 's1').style.display='none'
+            return x=2;
+        }
+        else
+        {
+            document.getElementById('s1').style.display='inline'
+            document.getElementById('s3', 's2').style.display='none'
+            return x=0;
+        }
+        
+    }
+    function prev()
+    {
+        if(x==0)
+        {
+            document.getElementById('s2').style.display='inline'
+            document.getElementById('s1', 's3').style.display='none'
+            return x=1;
+        }
+        if(x==1)
+        {
+            document.getElementById('s3').style.display='inline'
+            document.getElementById('s2', 's1').style.display='none'
+            return x=2;
+        }
+        else
+        {
+            document.getElementById('s1').style.display='inline'
+            document.getElementById('s3', 's2').style.display='none'
+            return x=0;
+        }
+        
+    }
+    
+    </script>

@@ -58,6 +58,10 @@ body
 {
     top: 48%;
 }
+#signup .socialbox
+{
+    top: 78%;
+}
 .formbox3
 {
     display: inline-block;
@@ -144,6 +148,16 @@ input[type="password"]
     font-weight: bold;
     color: teal;
 }
+.forgot a
+{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    margin-bottom: 20px;
+
+}
 .form input[type="checkbox"]
 {
     margin-top: 5px;
@@ -178,7 +192,7 @@ input[type="password"]
 .socialbox
 {
     position: absolute;
-    top: 80%;
+    top: 72%;
     left: 50%;
     transform: translate(-50%);
     text-align: center;
@@ -268,6 +282,10 @@ input[type="password"]
         top: 33%;
 
     }
+    #signup .socialbox
+    {
+        top: 75%;
+    }
     .formbox2
     {
         position: absolute;
@@ -311,7 +329,7 @@ input[type="password"]
     .socialbox
     {
         position: absolute;
-        top: 75%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%);
     }
