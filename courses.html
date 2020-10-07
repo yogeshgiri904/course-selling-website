@@ -69,50 +69,57 @@
     </nav>
 
 
-    <div class="main">
-        <h1>Our Courses</h1>
-        <a href="index.html">Back</a>
-    </div>
 <div class="testimonials">
-    <h2>What Our Costumer Says</h2>
+    <h2>Our Featured Courses</h2>
     <button onclick="prev()" id="prev" class="tbtn"> <i class="fa fa-angle-left" aria-hidden="true"></i> </button>
 <div class="container">
     <div class="slides" id="s1">
         <img src="img/test/2.jpg">
         <div class="text">
-            <p>
-                "Love their services and was so amazed with the support and results that
-                 I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
-                 They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
-            </p>
-            <span> Sachin Sahoo </span></br>
-            <span> 'Penetration Expert' </span>
+                    <h3><i class="fa fa-check-circle-o" aria-hidden="true"></i>Cyber Security - With Live Examples</h3>
+                    <span>Intermediate 	•  62 Lectures	•  4h 51m</span></br>
+                    <p>
+                        "Love their services and was so amazed with the support and results that
+                         I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
+                         They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
+                    </p></br>
+                    <p class="offr">₹5500/- </p>
+                    <p class="onr">₹5000/- </p></br>
+                    <button><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <button><i class="fa fa-heart" aria-hidden="true"></i></button>
         </div>
     </div>
     <div class="slides" id="s2">
         <img src="img/test/3.jpg">
         <div class="text">
+            <h3><i class="fa fa-check-circle-o" aria-hidden="true"></i>Web Development - With Classic Examples</h3>
+            <span>Intermediate 	•  62 Lectures	•  4h 51m</span></br>
             <p>
                 "Love their services and was so amazed with the support and results that
                  I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
                  They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
             </p>
-            <span> Cathy Heaven </span></br>
-            <span> 'Web Developer' </span>
-        </div>
+            <p class="offr">₹5500/- </p>
+            <p class="onr">₹5000/- </p></br>
+            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+            <button><i class="fa fa-heart" aria-hidden="true"></i></button>
+</div>
     </div>
     <div class="slides" id="s3">
         <img src="img/test/4.jpg">
         <div class="text">
+            <h3><i class="fa fa-check-circle-o" aria-hidden="true"></i>Cyber Security - with classic Examples</h3>
+            <span>Intermediate 	•  62 Lectures	•  4h 51m</span></br>
             <p>
                 "Love their services and was so amazed with the support and results that
                  I purchased Crown Package at Shri Ram Organiation last year. Here mentors are just awesome.
                  They has always helped in my studies by clearing all my queries. Buy it right now, You will not regret !"
             </p>
-            
-            <span> Kaira noir </span></br>
-            <span> 'Executive Designer' </span>
-        </div>
+            <p class="offr">₹5500/- </p>
+            <p class="onr">₹5000/- </p></br>
+            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+            <button><i class="fa fa-heart" aria-hidden="true"></i></button>
+</div>
     </div>
 </div>
 <button onclick="next()" id="next" class="tbtn"> <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
@@ -120,9 +127,6 @@
 
 
     <div class="head">
-        <h2>Courses to get you started</h2>
-        <p>The world's largest selection of courses</br>
-            Choose from 83,000+ online video courses with new additions published every month</p>
         <div class="links">
             <a href="#">Web Development</a>
             <a href="#">Programming Languages</a>
@@ -143,7 +147,6 @@
         </div>
     
         <div class="portal">
-            <div class="cont1">
             <div class="itm1"><a href="#"><img src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg"></a></div>
             <div class="itm1"><a href="#"><img src="https://cdn.pixabay.com/photo/2020/08/26/01/40/coffee-5518359_640.jpg"></a></div>
             <div class="itm1"><a href="#"><img src="https://cdn.pixabay.com/photo/2015/05/31/15/07/business-792113_960_720.jpg"></a></div>
@@ -153,7 +156,7 @@
             <div class="itm1"><a href="#"><img src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg"></a></div>
             <div class="itm1"><a href="#"><img src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg"></a></div>
             <div class="itm1"><a href="#"><img src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg"></a></div>
-            </div>
+
         </div>
     </div>
 
@@ -165,19 +168,19 @@ function next()
 {
     if(x==0)
     {
-        document.getElementById('s2').style.display='inline'
+        document.getElementById('s2').style.display='inline-flex'
         document.getElementById('s1', 's3').style.display='none'
         return x=1;
     }
     if(x==1)
     {
-        document.getElementById('s3').style.display='inline'
+        document.getElementById('s3').style.display='inline-flex'
         document.getElementById('s2', 's1').style.display='none'
         return x=2;
     }
     else
     {
-        document.getElementById('s1').style.display='inline'
+        document.getElementById('s1').style.display='inline-flex'
         document.getElementById('s3', 's2').style.display='none'
         return x=0;
     }

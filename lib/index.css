@@ -206,7 +206,7 @@
 }
 .child:nth-child(3)
 {
-    background-color: teal;
+    background-color: turquoise;
 }
 .child:nth-child(4)
 {
@@ -241,15 +241,14 @@
 .ctxt button
 {
     margin: 10px 5px;
-    padding-top: 3px;
-    font-size: 20px;
-    width: 40px;
+    font-size: 18px;
     height: 40px;
+    width: 40px;
     display: inline-block; 
     color: crimson ;
     border: 2px solid crimson;
     background-color: transparent;
-    border-radius: 3px;
+    border-radius: 200px;
 }
 .ctxt button:hover
 {
@@ -287,11 +286,13 @@
 .explore
 {
     margin-right: 8%;
+    padding: 3px 8px;
     float: right;
     width: 120px;
     height: 30px;
     text-align: center;
-    border: 1px solid white;
+    border: 2px solid white;
+    font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
     color: white;

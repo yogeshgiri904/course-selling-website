@@ -1,50 +1,46 @@
-body
+*
 {
-    position: absolute;
-    top: 80px;
-}
-.main
-{
-    width: 100vw;
-    height: 30vh;
-    background-color: rgba(0, 0, 0, 0.500);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    padding: 0;
+    margin: 0;
 }
 .testimonials
 {
-    position: absolute;
-    top: 120%;
+    position: relative;
+    top: 0%;
     left: 0%;
     width: 100vw;
-    height: 500px;
-    background-color: coral;
+    height: 600px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/19/18/20/tea-time-3240766_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 .testimonials h2
 {
     font-size: 30px;
-    margin-top: 15px;
+    padding-top: 100px;
     text-align: center;
     font-weight: bold;
 }
 .container
 { 
     display: inline-flex;
-
 }
 .slides
 {
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%);
     width: 70%;
-    height: 300px;
+    height: 350px;
     padding: 30px;
     text-align: center;
-
+    background-color: rgba(0, 0, 0, 0.500);
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
 }
 #s2, #s3
 {
@@ -52,19 +48,48 @@ body
 }
 .slides img
 {
-    width: 180px;
-    border-radius: 180px;
-    border: 1px solid black;
-    padding: 8px;
+    width: 40%;
+    height: 100%;
 }
-.text p
+.text
 {
-    margin: 20px;
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: center;
 }
-.text span
+.text h3
 {
+    font-size: 20px;
     font-weight: bold;
 }
+.offr, .onr
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+.offr
+{
+    text-decoration: line-through;
+    color: grey;
+}
+.slides button
+{
+    display: block;
+    border: 1px solid crimson;
+    background-color: crimson;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.slides button:hover
+{
+    color: crimson;
+    background-color: transparent;
+}
+
 .tbtn
 {
     background-color: transparent;
@@ -84,19 +109,36 @@ body
     right: 5%;
 }
 
+@media(max-width:720px)
+{
+    .slides
+    {
+        display: inline-block;
+        height: fit-content;
+        padding: 0px;
+    }
+    .slides img
+    {
+        width: 100%;
+        height: 300px;
+    }
+    .text
+    {
+        width: 100%;
+    }
+            
+}
 
 .head
 {
     position: relative;
-    top: 400%;
+    top: 100%;
     left: 0;
-    height: 30%;
     display: inline-flex;
     flex-flow: column;
     width: 100vw;
     background: transparent;
-    padding: 5px 50px;
-
+    text-align: center;
 }
 .head h2
 {
@@ -127,8 +169,9 @@ body
     background-color: crimson;
     color: white;
 }
-.cont1
+.portal
 {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: repeat(5, 400px);
