@@ -169,18 +169,19 @@ function next()
     if(x==0)
     {
         document.getElementById('s2').style.display='inline-flex'
+        document.getElementById('s2').style.width='70%'
         document.getElementById('s1', 's3').style.display='none'
         return x=1;
     }
     if(x==1)
     {
-        document.getElementById('s3').style.display='inline-flex'
+        document.getElementById('s3').style.width='70%'
         document.getElementById('s2', 's1').style.display='none'
         return x=2;
     }
     else
     {
-        document.getElementById('s1').style.display='inline-flex'
+        document.getElementById('s1').style.width='70%'
         document.getElementById('s3', 's2').style.display='none'
         return x=0;
     }
