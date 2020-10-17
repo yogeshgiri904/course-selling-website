@@ -345,16 +345,16 @@
 }
 .eflex2
 {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    width: 100%;
     display: inline-flex;
-    width: 90vw;
-    height: auto;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color:black;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.eflex2::-webkit-scrollbar
+{
+    overflow: hidden;
 }
 .ebox
 {
@@ -363,7 +363,12 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     width: 250px;
     height: 340px;
-    margin-bottom: 30px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+.ebox:hover
+{
+    transform: scale(1.05);
 }
 .exavatar
 {
